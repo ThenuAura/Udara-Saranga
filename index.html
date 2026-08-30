@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udara Saranga Bs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <h2><span>BS with</span> Udara Saranga</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#timetable">Timetable</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#results">Student Care</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. Home / Hero -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="tag pill-blue">O/L & A/L Business Studies</span>
+        <h1>Udara Saranga</h1>
+        <h3>Commerce / Business Studies</h3>
+        <p>සරල සහ ප්‍රායෝගික ක්‍රමවේද ඔස්සේ විභාගයෙන් විශිෂ්ටතම A සාමාර්ථයක් වෙත පාර කියන දිවයිනේ ප්‍රමුඛතම පන්ති මාලාව.</p>
+        <div class="hero-btns">
+          <a href="#classes" class="btn btn-primary">Join Class &rarr;</a>
+          
+          <!-- Direct WhatsApp Button -->
+          <a href="https://wa.me/94771234567?text=Hi%20Sir%2C%20mata%20class%20wisthara%20danaganna%20one" target="_blank" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="udara.png" alt="Sir Photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- O/L & A/L Selection Section -->
+  <section class="category-selector-container">
+    <div class="header-text text-center">
+      <h2>ඔබගේ අධ්‍යයන මට්ටම තෝරන්න</h2>
+      <p>පහත O/L හෝ A/L බොත්තම Click කර අදාළ පන්ති වේලාවන් වෙත පහසුවෙන්ම යන්න.</p>
+    </div>
+    <div class="category-selector">
+      <button class="cat-btn ol-btn" onclick="scrollToSection('ol-classes')">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>O/L Classes</span>
+        <small>10 & 11 ශ්‍රේණි</small>
+      </button>
+
+      <button class="cat-btn al-btn" onclick="scrollToSection('al-classes')">
+        <i class="fa-solid fa-microscope"></i>
+        <span>A/L Classes</span>
+        <small>2027 & 2028 A/L</small>
+      </button>
+    </div>
+  </section>
+
+  <!-- 2. About Sir -->
+  <section id="about" class="about-section">
+    <div class="section-title">
+      <h2>👨‍🏫 About Sir</h2>
+    </div>
+    <div class="about-card">
+      <div class="about-info">
+        <h3>Senior Lecturer - Your Name</h3>
+        <p class="about-desc">
+          වසර 05 කට වැඩි උසස් පෙළ සහ සාමාන්‍ය පෙළ ඉගැන්වීමේ අත්දැකීම් සහිත, දිවයිනේ ප්‍රමුඛ පෙළේ විශ්වවිද්‍යාලයක උපාධිධාරී ගුරුවරයෙකි.
+        </p>
+        <div class="about-grid">
+          <div class="about-box">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h4>Qualifications</h4>
+            <p>b.com.sp.ca ( corporate level )</p>
+          </div>
+          <div class="about-box">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Teaching Experience</h4>
+            <p>05+ Years Experience</p>
+          </div>
+          <div class="about-box">
+            <i class="fa-solid fa-trophy"></i>
+            <h4>Results / Achievements</h4>
+            <p>100+ A Grade Students</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Classes -->
+  <section id="classes" class="classes-section">
+    
+    <!-- O/L Classes Sub-section -->
+    <div id="ol-classes" class="class-group">
+      <div class="section-title">
+        <h2>📚 O/L Classes (10 / 11 ශ්‍රේණි)</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="path-card">
+          <div class="card-header">
+            <span class="flag-badge">Grade 10</span>
+            <h2>10 ශ්‍රේණිය</h2>
+          </div>
+          <span class="sub-badge pill-green">• Theory & Revision</span>
+          <div class="details">
+            <div class="info-group"><span class="label">LOCATION</span><span class="val">Physical</span></div>
+            <div class="info-group"><span class="label">FEE</span><span class="val">රු. 1,000 / මාසිකව</span></div>
+          </div>
+          
+          <!-- WhatsApp Link for Grade 10 -->
+          <a href="https://wa.me/94771234567?text=Hi%20Sir%2C%20mata%20Grade%2010%20class%20ekata%20join%20wenne%20komada%20danaganna%20one" target="_blank" class="btn-card-link">
+            Join Class via WhatsApp &rarr;
+          </a>
+        </div>
+
+        <div class="path-card">
+          <div class="card-header">
+            <span class="flag-badge">Grade 11</span>
+            <h2>11 ශ්‍රේණිය</h2>
+          </div>
+          <span class="sub-badge pill-green">• Target Paper & Revision</span>
+          <div class="details">
+            <div class="info-group"><span class="label">LOCATION</span><span class="val">Physical</span></div>
+            <div class="info-group"><span class="label">FEE</span><span class="val">රු. 1,000/ මාසිකව</span></div>
+          </div>
+          
+          <!-- WhatsApp Link for Grade 11 -->
+          <a href="https://wa.me/94771234567?text=Hi%20Sir%2C%20mata%20Grade%2011%20class%20ekata%20join%20wenne%20komada%20danaganna%20one" target="_blank" class="btn-card-link">
+            Join Class via WhatsApp &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- A/L Classes Sub-section -->
+    <div id="al-classes" class="class-group">
+      <div class="section-title">
+        <h2>📚 A/L Classes</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="path-card">
+          <div class="card-header">
+            <span class="flag-badge">2027 A/L</span>
+            <h2>Theory Class</h2>
+          </div>
+          <span class="sub-badge pill-purple">Target Paper & Revision</span>
+          <div class="details">
+            <div class="info-group"><span class="label">LOCATION</span><span class="val">Physical</span></div>
+            <div class="info-group"><span class="label">FEE</span><span class="val">රු. 2,500 / මාසිකව</span></div>
+          </div>
+          
+          <!-- WhatsApp Link for 2026 AL -->
+          <a href="https://wa.me/94771234567?text=Hi%20Sir%2C%20mata%202026%20AL%20Theory%20class%20ekata%20join%20wenne%20komada%20danaganna%20one" target="_blank" class="btn-card-link">
+            Join Class via WhatsApp &rarr;
+          </a>
+        </div>
+
+        <div class="path-card">
+          <div class="card-header">
+            <span class="flag-badge">2028 A/L</span>
+            <h2>Theory Class</h2>
+          </div>
+          <span class="sub-badge pill-purple">Target Paper & Revision</span>
+          <div class="details">
+            <div class="info-group"><span class="label">LOCATION</span><span class="val">Physical</span></div>
+            <div class="info-group"><span class="label">FEE</span><span class="val">රු. 2,500 / මාසිකව</span></div>
+          </div>
+          
+          <!-- WhatsApp Link for 2025 AL -->
+          <a href="https://wa.me/94771234567?text=Hi%20Sir%2C%20mata%202025%20AL%20Revision%20class%20ekata%20join%20wenne%20komada%20danaganna%20one" target="_blank" class="btn-card-link">
+            Join Class via WhatsApp &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 4. Class Timetable -->
+  <section id="timetable" class="timetable-section">
+    <div class="section-title">
+      <h2>🗓️ Class Timetable 📚 O/L Classes (10 ශ්‍රේණිය)</h2>
+    </div>
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Day</th>
+            <th>Time</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>විස්ඩම්	- තල්ගස්ගොඩ</td>
+            <td>සඳුදා</td>
+            <td>ප.ව. 4.30</td>
+            
+          </tr>
+          <tr>
+            <td>සාදර	- කළුවාමෝදර</td>
+            <td>අඟහරුවාදා</td>
+            <td>ප.ව. 5.30</td>
+           
+          </tr>
+          <tr>
+            <td>සයන්සා	- අලුත්ගම</td>
+            <td>අඟහරුවාදා</td>
+            <td>ප.ව. 7.30</td>
+            
+          </tr>
+          <tr>
+            <td>ලොසක්යා	- අඹගහහන්දිය</td>
+            <td>බ්‍රහස්පතින්දා</td>
+            <td>ප.ව. 3.00</td>
+            
+          </tr>
+          <tr>
+            <td>සයන්සා	- බේරුවල</td>
+            <td>බ්‍රහස්පතින්දා</td>
+            <td>ප.ව. 7.00</td>
+            
+          </tr>
+          <tr>
+            <td>නැණික්මෝ	- ගල්මත්ත</td>
+            <td>ඉරිදා</td>
+            <td>ප.ව. 4.00</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <section id="timetable" class="timetable-section">
+    <div class="section-title">
+      <h2>🗓️ Class Timetable 📚 O/L Classes (11 ශ්‍රේණිය)</h2>
+    </div>
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Day</th>
+            <th>Time</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>සයන්සා	- අලුත්ගම</td>
+            <td>බදාදා</td>
+            <td>ප.ව. 3.15</td>
+            
+          </tr>
+          <tr>
+            <td>ලොසක්යා	- අඹගහහන්දිය</td>
+            <td>බ්‍රහස්පතින්දා</td>
+            <td>ප.ව. 4.30</td>
+           
+          </tr>
+          <tr>
+            <td>විස්ඩම්	- තල්ගස්ගොඩ</td>
+            <td>සිකුරාදා</td>
+            <td>පෙ.ව. 4.15</td>
+            
+          </tr>
+          <tr>
+            <td>සයන්සා	- බේරුවල</td>
+            <td>සිකුරාදා</td>
+            <td>ප.ව. 7.00</td>
+            
+          </tr>
+          <tr>
+            <td>නැණික්මෝ	- ගල්මත්ත</td>
+            <td>සෙනසුරාදා</td>
+            <td>ප.ව. 3.00</td>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="timetable" class="timetable-section">
+    <div class="section-title">
+      <h2>🗓️ Class Timetable 📚 2027 AL</h2>
+    </div>
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Day</th>
+            <th>Time</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>පැනෝලා - මතුගම</td>
+            <td>ඉරිදා </td>
+            <td>උදේ 8.00</td>
+            
+          </tr>
+          <tr>
+            <td>සයන්සා - අලුත්ගම</td>
+            <td>ඉරිදා</td>
+            <td>උදේ 11.30</td>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <section id="timetable" class="timetable-section">
+    <div class="section-title">
+      <h2>🗓️ Class Timetable 📚 2028 AL</h2>
+    </div>
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Day</th>
+            <th>Time</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>පැනෝලා - මතුගම</td>
+            <td>සෙනසුරාදා</td>
+            <td>ප.ව 12.30</td>
+            
+          </tr>
+          <tr>
+            <td>සයන්සා - අලුත්ගම</td>
+            <td>සෙනසුරාදා</td>
+            <td>උදේ 10.00</td>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- 5. Gallery -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-title">
+      <h2>📸 Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <img src="1.jpg" alt="Class Photo">
+      <img src="2.jpg" alt="Seminar Photo">
+      <img src="3.jpg" alt="Event Photo">
+      <img src="4.jpg" alt="Achievement Photo">
+      <img src="5.jpg" alt="Class Photo">
+      <img src="6.jpg" alt="Seminar Photo">
+      <img src="7.jpg" alt="Event Photo">
+      <img src="8.jpg" alt="Achievement Photo">
+    </div>
+  </section>
+
+  <!-- 6. Results / Achievements -->
+  <section id="results" class="results-section">
+    <div class="section-title">
+      <h2>🎯 Teaching Methodology & Care</h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-box">
+        <h3>Individual Attention</h3>
+        <p>සාමාන්‍ය මට්ටමේ සිටින සිසුන් කෙරෙහි විශේෂ අවධානය යොමු කරමින් 'A' සාමාර්ථයක් දක්වා මෙහෙයවීම.</p>
+      </div>
+      <div class="result-box">
+        <h3>Paper Marking & Feedback</h3>
+        <p>සෑම ප්‍රශ්න පත්‍රයක්ම Scoring Rubrics අනුව ලකුණු කර සිසුන්ගේ අඩුපාඩු පෞද්ගලිකව පෙන්වා දීම.</p>
+      </div>
+      <div class="result-box">
+        <h3>24/7 Doubt Clearing</h3>
+        <p>WhatsApp Group හරහා ඕනෑම වේලාවක ගැටලු යොමු කර විසඳුම් ලබාගැනීමේ පහසුකම.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Contact & Social Links -->
+  <footer id="contact" class="footer-section">
+    <div class="footer-content">
+      <h2>📞 Contact Us</h2>
+      <p>පන්ති සඳහා ලියාපදිංචි වීමට හෝ වැඩිදුර විස්තර සඳහා අප හා සම්බන්ධ වන්න.</p>
+      
+      <div class="social-links">
+        <!-- Direct Footer WhatsApp Link -->
+        <a href="https://wa.me/94758544472" target="_blank" class="wa">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+94758544472" class="ph"><i class="fa-solid fa-phone"></i> Call Us</a>
+        <a href="#" class="fb"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="#" class="yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
+        <a href="#" class="tg"><i class="fa-brands fa-telegram"></i> Telegram</a>
+      </div>
+      <p class="copyright">© 2026 YourClass.lk | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
