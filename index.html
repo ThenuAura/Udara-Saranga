@@ -64,6 +64,9 @@
         <small>10 & 11 ශ්‍රේණි</small>
       </button>  <img src="" alt="">
 
+
+
+
       <button class="cat-btn al-btn" onclick="scrollToSection('al-classes')">
         <i class="fa-solid fa-microscope"></i>
         <span>A/L Classes</span>
@@ -71,6 +74,31 @@
       </button>
     </div>
   </section>
+
+
+  <!-- 1080x1080 Post Slider Section -->
+<section class="class-posts-slider-section">
+  <div class="section-title">
+    <h2>📸 Class Posters </h2>
+  </div>
+  
+  <div class="slider-container">
+    <div class="slider-track" id="sliderTrack">
+      <!-- Image 1 -->
+      <div class="post-slide">
+        <img src="C1.png" alt="Class Post 1">
+      </div>
+      <!-- Image 2 -->
+      <div class="post-slide">
+        <img src="C2.jpeg" alt="Class Post 2">
+      </div>
+      <!-- Image 3 -->
+      
+      
+      <!-- Infinite loop එක seamless වෙන්න duplicate images ටිකක් මෙතනට JS එකෙන් හෝ manual දාන්න පුළුවන් -->
+    </div>
+  </div>
+</section>
 
   <!-- 2. About Sir -->
   <section id="about" class="about-section">
@@ -433,7 +461,43 @@
       <p class="copyright">© 2026 YourClass.lk | All Rights Reserved</p>
     </div>
   </footer>
+<script>
+    window.addEventListener("load", function () {
+      const track = document.getElementById("sliderTrack");
+      
+      if (track) {
+        const slides = Array.from(track.children);
+        slides.forEach((slide) => {
+          const clone = slide.cloneNode(true);
+          track.appendChild(clone);
+        });
 
-  <script src="script.js"></script>
+        let scrollPos = 0;
+        const speed = 1;
+        let isPaused = false;
+        const totalWidth = track.scrollWidth / 2;
+
+        function animateSlider() {
+          if (!isPaused) {
+            scrollPos += speed;
+            if (scrollPos >= totalWidth) {
+              scrollPos = 0;
+            }
+            track.style.transform = `translateX(-${scrollPos}px)`;
+          }
+          requestAnimationFrame(animateSlider);
+        }
+
+        track.addEventListener("mouseenter", () => { isPaused = true; });
+        track.addEventListener("mouseleave", () => { isPaused = false; });
+
+        requestAnimationFrame(animateSlider);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
 </body>
 </html>
